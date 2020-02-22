@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico Alvarez | Android (con Java)</title>
+    <!-- Materialize CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="../../../../css/style.css">
+    <link rel="stylesheet" href="../../../../css/course.css">
+    <link rel="stylesheet" href="../../../../css/tutor-modal.css">
+    <link rel="shortcut icon" href="../../../../logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <div class="container">
+        <!-- Cookie banner -->
+        <div class="cookie-banner block" id="cookie-banner">
+          <p class="cookie-text">
+            <i class="fas fa-info-circle info-icon"></i>
+            Esta página web utiliza cookies para mejorar el rendimiento y mostrar contenido personalizado. Si deseas seguir navegando esta página, debes consentir el uso de cookies clicando "OK".
+          </p>
+          <button class="btn cb-close-btn" id="cb-close-btn">OK</button>
+          <a href="#" class="cb-info">Más información</a>
+        </div>
+        <!-- Nav -->
+        <nav class="main-nav">
+          <ul class="left-menu">
+            <img src="../../../../assets/images/logo.PNG" alt="Nico Alvarez" class="logo">
+            <a href="../../../index.html" class="brand-name">Nico Alvarez</a>
+          </ul>
+          <ul class="main-menu">
+            <li><a href="#">Sobre mí</a></li>
+            <li><a href="../../../tutorials.html">Tutoriales</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Aviso legal</a></li>
+            <li>
+              <select id="languages" onChange="checkLang(this);">
+                <option value="es">
+                  Español
+                </option>
+                <option value="en">
+                  English
+                </option>
+                <option value="de">
+                  Deutsch
+                </option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="intro-modal" id="intro-slothy">
+          <div class="intro-modal-content">
+            <div class="intro-modal-header imh-slothy">
+              <h2>Disculpa... soy Slothy</h2>
+              <span class="intro-modal-close">&times;</span>
+            </div>
+            <div class="intro-modal-body">
+              <div class="img-wrapper">
+                <img src="../../../../assets/images/slothy.png"/>
+              </div>
+              <p class="imb-slothy-p">Para comenzar, me presento. Soy <b>Slothy</b>, tutor encargado de la sección de programación. Veo que este es tu primer curso en programación. Encantado de conocerte. Disculpa si soy algo <b>torpe</b> o si en algunas partes soy <b>vago</b> escribiendo. Es simplemente parte de mi personalidad. Espero sin embargo poder explicar todo el contenido de forma que te sea comprensible. Si te portas bien, recibes <b>hojas de bambú</b> con mis cursos.</p>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="title">Introducción</h1>
+
+        <div class="lesson-text">
+            <div class="questions-container">
+              <div>
+                <div id="android-java-q1-answers-container"
+                class="none">
+                  <p id="android-java-q1-question">
+                    Empecemos con una pregunta sobre ti: ¿Tienes ya un teléfono, tablet, televisor o coche Android?
+                  </p>
+                  <label class="question-container slothy">
+                    <input type="radio" name="android-java-q1">
+                    <span class="checkmark"></span>  
+                    <span class="answer" id="android-java-q1-a1">Sí</span>
+                  </label>
+                  <label class="question-container slothy">
+                    <input type="radio" name="android-java-q1">
+                    <span class="checkmark"></span>
+                    <span class="answer" id="android-java-q1-a2">No</span>
+                  </label>
+                  <label class="question-container slothy">
+                    <input type="radio" name="android-java-q1">
+                    <span class="checkmark"></span>
+                    <span class="answer" id="android-java-q1-a3">¿Qué es eso?</span>
+                  </label>
+                  <label class="question-container slothy">
+                    <input type="radio" name="android-java-q1">
+                    <span class="checkmark"></span>
+                    <span class="answer" id="android-java-q1-a4">No tengo nada de eso</span>
+                  </label>
+                  <div class="question-container submit-btn-container slothy">
+                    <button class="submit-btn" id="android-java-q1-submit" onclick="submittedRadioQuestion(this)">
+                      Comprobar
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <p class="none" id="android-java-q1-qm">
+                <span class="grey-color">Pregunta hecha: </span>
+                <span id="android-java-q1-qm_done"></span>
+              </p>
+              <p class="none" id="android-java-q1-oa">
+                <span class="slothy-color">Tu respuesta: </span>
+                <span id="android-java-q1-oa_done"></span>
+              </p>
+              <p class="response none slothy-color" id="android-java-q1-r1">
+                Genial, entonces ya te conoces un poco con lo que es Android. Puedes leerte la introducción más rápidamente y si no conoces alguna palabra clave, no dudes en clicar sobre la palabra para ver una explicación.
+              </p>
+              <p class="response none slothy-color" id="android-java-q1-r2">
+                No pasa nada. Afortunadamente, no necesitas tener un Android para desarrollar apps Android, aunque sí se recomienda. En principio, si tu ordenador tiene suficiente memoria, puedes instalar un emulador que simule un aparato Android. Más sobre este tema en lecciones posteriores. De momento, si no conoces Android muy bien, lee atentamente la introducción y no dudes en clicar sobre palabras clave para ver una explicación.
+              </p>
+              <p class="response none slothy-color" id="android-java-q1-r3">
+                Si no conoces Android muy bien, lee atentamente la introducción y no dudes en clicar sobre palabras clave para ver una explicación. Espero que después de leer la introducción puedas tener una idea de lo que Android es.
+              </p>
+              <p class="response none slothy-color" id="android-java-q1-r4">
+                No pasa nada. Afortunadamente, no necesitas tener un Android para desarrollar apps Android, aunque sí se recomienda. En principio, si tu ordenador tiene suficiente memoria, puedes instalar un emulador que simule un aparato Android. Más sobre este tema en lecciones posteriores. De momento, si no conoces Android muy bien, lee atentamente la introducción y no dudes en clicar sobre palabras clave para ver una explicación.
+              </p>
+            </div>
+
+            <div class="lesson-text-container" id="ltc-1">
+              <p>Android es un sistema operativo basado en Linux. Pese a que mucha gente atribuye Android a Google, en el desarrollo inicial de la plataforma Android no tomó parte Google. En el año 2005 Google adquirió Android, y desde entonces es propiedad de la empresa norteamericana. Sin embargo, Android es de todas formas "Open Source" o de código abierto. Es decir, todo el mundo puede sugerir cambios del código o realizarlos directamente y pedir que sean aceptados.</p>
+              <img src="../../../../assets/images/android-java/1.png" width="100%"/>
+              <p>
+                El código de Android se puede descargar directamente desde esta página: 
+                <a class="normal-link slothy-color" href="https://source.android.com/" target="_blank">https://source.android.com/</a>.
+              </p>
+            </div>
+
+            <div class="questions-container">
+              <div>
+                <div id="android-java-q2-answers-container"
+                class="none">
+                  <p id="android-java-q2-question">
+                    Basándonos en estas informaciones, ¿podrías deducir si Android es solamente líneas de código o algo más?:
+                  </p>
+                  <label class="question-container slothy">
+                    <input type="radio" name="android-java-q2">
+                    <span class="checkmark"></span>  
+                    <span class="answer" id="android-java-q2-a1">Android es básicamente líneas de código</span>
+                  </label>
+                  <label class="question-container slothy">
+                    <input type="radio" name="android-java-q2">
+                    <span class="checkmark"></span>
+                    <span class="answer" id="android-java-q2-a2">Android es más que líneas de código</span>
+                  </label>
+                  <div class="question-container submit-btn-container slothy">
+                    <button class="submit-btn" id="android-java-q2-submit" onclick="submittedRadioQuestion(this)">
+                      Comprobar
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <p class="none" id="android-java-q2-qm">
+                <span class="grey-color">Pregunta hecha: </span>
+                <span id="android-java-q2-qm_done"></span>
+              </p>
+              <p class="none" id="android-java-q2-oa">
+                <span class="slothy-color">Tu respuesta: </span>
+                <span id="android-java-q2-oa_done"></span>
+              </p>
+              <p class="response none slothy-color" id="android-java-q2-r1">
+                Exactamente, Android es básicamente un programa enorme con un montón de líneas de código que se puede descargar (y si quieres, instalar en cualquier aparato electrónico).
+              </p>
+              <p class="response none slothy-color" id="android-java-q2-r2">
+                No del todo. Android es básicamente solo código. Si lo descargas e instalas en un aparato electrónico, te darás cuenta que Android es básicamente un programa, con la diferencia de que desde Android se pueden ejecutar programas pero desde programas normales no puedes ejecutar Android. Android es un sistema operativo, es decir, el programa más básico que se puede ejecutar.
+              </p>
+            </div>
+
+            <div class="lesson-text-container" id="ltc-2">
+              <p>Mmhhh... Entonces, ¿Android no es más que líneas de código, que si se compilan y se ejecutan en una máquina, se vuelve una "máquina Android"? Efectivamente. Y este es el poder significante de Android. Mientras que otros sistemas operativos son muy restrictivos o solo para ciertos aparatos, Android se puede adaptar a cualquier aparato. Otro aspecto de Android es que es un sistema operativo muy seguro y robusto gracias a que tiene varias capas de defensa. Por último, Android tiene mediante la Google Play Store, la tienda de aplicaciones, acceso a una gran cantidad de apps, que como consecuencia atraen a una gran masa de usuarios hacia Android. Estas tres características, especialmente el hecho de que Android es un sistema libre, explican por qué Android tiene un porcentaje de mercado de aproximadamente un 75%. En otras palabras, <b>75 de cada 100 aparatos móviles que elijas aleatoriamente tendrán Android</b>.</p>
+              <p>Repasamos:</p>
+              <div class="centered-div">
+                <ol>
+                  <li>Android está basado en Linux</li>
+                  <li>Android es "Open Source"</li>
+                  <li>No se puede descargar el código de Android porque es de Google</li>
+                  <li>El sistema de seguridad de Android es muy robusto</li>
+                  <li>Android es básicamente una masa enorme de código</li>
+                  <li>En la Google Play Store se pueden descargar apps</li>
+                  <li>La mayoría de aparatos móviles tienen Android</li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="questions-container">
+              <div>
+                <div id="android-java-q3-answers-container"
+                class="none">
+                  <p id="android-java-q3-question">
+                    Genial, ahora podemos pasar a... Un momento, creo que me he despistado y en el repaso he escrito una línea incorrectamente... Me da pereza encontrar el fallo, ¿puedes encontrar el fallo tú por mí?:
+                  </p>
+                  <label class="question-container slothy">
+                    <input type="radio" name="android-java-q3">
+                    <span class="checkmark"></span>  
+                    <span class="answer" id="android-java-q3-a1">En la Google Play Store se pueden descargar apps.</span>
+                  </label>
+                  <label class="question-container slothy">
+                    <input type="radio" name="android-java-q3">
+                    <span class="checkmark"></span>
+                    <span class="answer" id="android-java-q3-a2">No se puede descargar el código de Android porque es de Google.</span>
+                  </label>
+                  <label class="question-container slothy">
+                    <input type="radio" name="android-java-q3">
+                    <span class="checkmark"></span>
+                    <span class="answer" id="android-java-q3-a3">Android es "Open Source".</span>
+                  </label>
+                  <div class="question-container submit-btn-container slothy">
+                    <button class="submit-btn" id="android-java-q3-submit" onclick="submittedRadioQuestion(this)">
+                      Comprobar
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <p class="none" id="android-java-q3-qm">
+                <span class="grey-color">Pregunta hecha: </span>
+                <span id="android-java-q3-qm_done"></span>
+              </p>
+              <p class="none" id="android-java-q3-oa">
+                <span class="slothy-color">Tu respuesta: </span>
+                <span id="android-java-q3-oa_done"></span>
+              </p>
+              <p class="response none slothy-color" id="android-java-q3-r1">
+                No, esa frase es correcta. Se pueden descargar apps desde la Play Store, aunque también se pueden descargar directamente del Internet. Espera, creo que ya encontré el fallo: Puse que no se puede descargar el código de Android pero sí se puede.
+              </p>
+              <p class="response none slothy-color" id="android-java-q3-r2">
+                Ah, sí, tienes razón. Has atendido bien: El código de Android es libre y se puede descargar, muy bien.
+              </p>
+              <p class="response none slothy-color" id="android-java-q3-r3">
+                No, esa frase es correcta. Android es "Open Source" porque el código se puede modificar y descargar... Pero uy, qué despistado soy... Ya encontré el fallo: Puse que no se puede descargar el código de Android pero por supuesto que se puede.
+              </p>
+            </div>
+
+            <div class="lesson-text-container" id="ltc-3">
+              <p>En esta lección hemos aprendido lo que es Android y qué importancia y uso tiene en el mercado. En la siguiente lección aprenderemos sobre la estructura y arquitectura de Android.</p>
+            </div>
+
+            <div class="lesson-navigation">
+              <div class="lesson-back disabled slothy">
+              </div>
+              <div class="lesson-index">
+                <a href="../index.html" class="lesson-index-link">
+                  <i class="fas fa-bars lesson-navigation-icon slothy"></i>
+                </a>
+              </div>
+              <div class="lesson-forward slothy">
+                <a href="./lesson-2.html" class="lesson-forward-link">
+                  <i class="fas fa-arrow-right lesson-navigation-icon slothy"></i>
+                </a>
+              </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+          <ul>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Privacidad &amp; cookies</a></li>
+          <li><a href="#">Términos de uso</a></li>
+          <li><a href="#">Aviso legal</a></li>
+          <li><span>&copy; nico-alvarez.eu <span id="current-year"></span></span></li>
+          </ul>
+      </div>
+    </footer>
+
+    <script src="../../../../js/script.js"></script>
+    <script src="../../../../js/modal.js"></script>
+    <script src="../../../../js/quizzes.js"></script>
+</body>
+</html>

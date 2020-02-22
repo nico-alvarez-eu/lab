@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico Alvarez | Android (con Java)</title>
+    <!-- Materialize CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="../../../../css/style.css">
+    <link rel="stylesheet" href="../../../../css/course.css">
+    <link rel="stylesheet" href="../../../../css/tutor-modal.css">
+    <link rel="shortcut icon" href="../../../../logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <div class="container">
+        <!-- Cookie banner -->
+        <div class="cookie-banner block" id="cookie-banner">
+          <p class="cookie-text">
+            <i class="fas fa-info-circle info-icon"></i>
+            Esta página web utiliza cookies para mejorar el rendimiento y mostrar contenido personalizado. Si deseas seguir navegando esta página, debes consentir el uso de cookies clicando "OK".
+          </p>
+          <button class="btn cb-close-btn" id="cb-close-btn">OK</button>
+          <a href="#" class="cb-info">Más información</a>
+        </div>
+        <!-- Nav -->
+        <nav class="main-nav">
+          <ul class="left-menu">
+            <img src="../../../../assets/images/logo.PNG" alt="Nico Alvarez" class="logo">
+            <a href="../../../index.html" class="brand-name">Nico Alvarez</a>
+          </ul>
+          <ul class="main-menu">
+            <li><a href="#">Sobre mí</a></li>
+            <li><a href="../../../tutorials.html">Tutoriales</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Aviso legal</a></li>
+            <li>
+              <select id="languages" onChange="checkLang(this);">
+                <option value="es">
+                  Español
+                </option>
+                <option value="en">
+                  English
+                </option>
+                <option value="de">
+                  Deutsch
+                </option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="intro-modal" id="intro-slothy">
+          <div class="intro-modal-content">
+            <div class="intro-modal-header imh-slothy">
+              <h2>Disculpa... soy Slothy</h2>
+              <span class="intro-modal-close">&times;</span>
+            </div>
+            <div class="intro-modal-body">
+              <div class="img-wrapper">
+                <img src="../../../../assets/images/slothy.png"/>
+              </div>
+              <p class="imb-slothy-p">Para comenzar, me presento. Soy <b>Slothy</b>, tutor encargado de la sección de programación. Veo que este es tu primer curso en programación. Encantado de conocerte. Disculpa si soy algo <b>torpe</b> o si en algunas partes soy <b>vago</b> escribiendo. Es simplemente parte de mi personalidad. Espero sin embargo poder explicar todo el contenido de forma que te sea comprensible. Si te portas bien, recibes <b>hojas de bambú</b> con mis cursos.</p>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="title">Conceptos internos de Android</h1>
+
+        <div class="lesson-text" style="text-align:center;">
+
+            <img src="../../../../assets/images/slothy-working.jpg" width="300px" height="auto" />
+            <p style="margin-bottom: 500px;">Slothy está trabajando a maza para terminar esta lección... O tomando unas vacaciones</p>
+
+            <div class="lesson-navigation">
+              <div class="lesson-back slothy">
+                <a href="./lesson-2.html" class="lesson-back-link">
+                    <i class="fas fa-arrow-left lesson-navigation-icon slothy"></i>
+                </a>
+              </div>
+              <div class="lesson-index">
+                <a href="../index.html" class="lesson-index-link">
+                  <i class="fas fa-bars lesson-navigation-icon slothy"></i>
+                </a>
+              </div>
+              <div class="lesson-forward disabled">
+              </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+          <ul>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Privacidad &amp; cookies</a></li>
+          <li><a href="#">Términos de uso</a></li>
+          <li><a href="#">Aviso legal</a></li>
+          <li><span>&copy; nico-alvarez.eu <span id="current-year"></span></span></li>
+          </ul>
+      </div>
+    </footer>
+
+    <script src="../../../../js/script.js"></script>
+    <script src="../../../../js/modal.js"></script>
+    <script src="../../../../js/quizzes.js"></script>
+</body>
+</html>

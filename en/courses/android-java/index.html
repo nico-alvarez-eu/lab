@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico Alvarez | Tutoriales</title>
+    <!-- Materialize CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tutorials.css">
+    <link rel="shortcut icon" href="../logo.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+      <div class="container">
+        <!-- Cookie banner -->
+        <div class="cookie-banner block" id="cookie-banner">
+          <p class="cookie-text">
+            <i class="fas fa-info-circle info-icon"></i>
+            Esta página web utiliza cookies para mejorar el rendimiento y mostrar contenido personalizado. Si deseas seguir navegando esta página, debes consentir el uso de cookies clicando "OK".
+          </p>
+          <button class="btn cb-close-btn" id="cb-close-btn">OK</button>
+          <a href="#" class="cb-info">Más información</a>
+        </div>
+        <!-- Nav -->
+        <nav class="main-nav">
+          <ul class="left-menu">
+            <img src="../assets/images/logo.PNG" alt="Nico Alvarez" class="logo">
+            <a href="index.html" class="brand-name">Nico Alvarez</a>
+          </ul>
+          <ul class="main-menu">
+            <li><a href="#">Sobre mí</a></li>
+            <li><a class="active" href="#">Tutoriales</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Aviso legal</a></li>
+            <li>
+              <select id="languages" onChange="checkLang(this);">
+                <option value="es">
+                  Español
+                </option>
+                <option value="en">
+                  English
+                </option>
+                <option value="de">
+                  Deutsch
+                </option>
+              </select>
+            </li>
+          </ul>
+        </nav>
+        
+        <h1 class="title">¿Qué quieres aprender hoy?</h1>
+
+        <div class="course-grid">
+            <a name="¿Cómo funciona la web?" 
+               class="course-card" 
+               href="#">
+            <div class="course-card-inner" id="web-img-bg"></div>
+                <div class="course-title">¿Cómo funciona la web y el Internet?</div>
+                <div class="course-hash-container">
+                  <span class="course-hash web">#web</span>
+                </div>
+                <div class="course-lesson-desc">
+                    <p>¿Sabías que la web y el Internet no son lo mismo? En este curso podrás aprender esto y muchas otras cosas</p>
+                </div>
+                <button class="course-btn">COMENZAR</button>
+            </a>
+            <a name="HTML" 
+               class="course-card" 
+               href="#">
+            <div class="course-card-inner" id="html-img-bg"></div>
+                <div class="course-title">HTML</div>
+                <div class="course-hash-container">
+                  <span class="course-hash web">#web</span>
+                  <span class="course-hash frontend">#frontend</span>
+                </div>
+                <div class="course-lesson-desc">
+                    <p>HTML es un lenguaje que da estructura a tus páginas web. ¡Sin él, los navegadores no sabrían colocar el contenido de una página o no sabrían diferenciar lo que es un texto de una imagen!</p>
+                    <!-- Build it later: A modal -->
+                    <!-- <a href="#">¿Para quién es este curso?</a> -->
+                </div>
+                <button class="course-btn">COMENZAR</button>
+            </a>
+
+            <a name="CSS" 
+               class="course-card" 
+               href="#">
+            <div class="course-card-inner" id="css-img-bg"></div>
+                <div class="course-title">CSS</div>
+                <div class="course-hash-container">
+                  <span class="course-hash web">#web</span>
+                  <span class="course-hash frontend">#frontend</span>
+                </div>
+                <div class="course-lesson-desc">
+                    <p>CSS es un lenguaje que provee estilos y decoración a tu HTML. Mediante él, puedes convertir un botón soso en un botón impresionante que todo el mundo quiere clicar. También podrás organizar tu página con un diseño más atractivo</p>
+                </div>
+                <button class="course-btn">COMENZAR</button>
+            </a>
+
+            <a name="JavaScript" 
+               class="course-card" 
+               href="#">
+            <div class="course-card-inner" id="js-img-bg"></div>
+                <div class="course-title">JavaScript</div>
+                <div class="course-hash-container">
+                  <span class="course-hash web">#web</span>
+                  <span class="course-hash frontend">#frontend</span>
+                </div>
+                <div class="course-lesson-desc">
+                    <p>JavaScript es el lenguaje de programación de la web. Lo que se puede hacer en un lenguaje de programación, se puede hacer en JavaScript, con la diferencia de que con JavaScript también puedes manipular HTML y CSS. Con JavaScript, tus páginas ya no son estáticas y obtienen vida</p>
+                </div>
+                <button class="course-btn">COMENZAR</button>
+            </a>
+
+            <a name="Pensar como un programador" 
+               class="course-card" 
+               href="#">
+            <div class="course-card-inner" id="think-img-bg"></div>
+                <div class="course-title">Pensar como un programador</div>
+                <div class="course-hash-container">
+                  <span class="course-hash programming">#progamacion</span>
+                </div>
+                <div class="course-lesson-desc">
+                    <p>Programar no es simplemente aprenderse la sintaxis de un lenguaje de programación y un par de comandos importantes. En este curso descubrirás que programar es una forma propia de pensar</p>
+                </div>
+                <button class="course-btn">COMENZAR</button>
+            </a>
+
+            <a name="Python" 
+               class="course-card" 
+               href="#">
+            <div class="course-card-inner" id="python-img-bg"></div>
+                <div class="course-title">Python</div>
+                <div class="course-hash-container">
+                  <span class="course-hash programming">#progamacion</span>
+                </div>
+                <div class="course-lesson-desc">
+                    <p>Python es un lenguaje de programación no solamente útil para quien quiera aprender a programar sin complicarse mucho la vida, sino que también es una herramienta perfecta para quien quiera meterse en el campo de análisis de datos, data science, IoT o incluso la web</p>
+                </div>
+                <button class="course-btn">COMENZAR</button>
+            </a>
+
+            <a name="Android (con Java)" 
+               class="course-card" 
+               href="#">
+            <div class="course-card-inner" id="androidjava-img-bg"></div>
+                <div class="course-title">Android (con Java)</div>
+                <div class="course-hash-container">
+                  <span class="course-hash android">#android</span>
+                  <span class="course-hash java">#java</span>
+                </div>
+                <div class="course-lesson-desc">
+                    <p>Android es un sistema operativo que no solo se utiliza en smartphones sino también en relojes (smartwatch), tablets, televisores e incluso coches. En este curso de Android aprenderás cómo Android funciona y sabrás desarrollar tus primeras aplicaciones simples usando Java</p>
+                </div>
+                <button class="course-btn">COMENZAR</button>
+            </a>
+        </div>
+
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+        <div class="footer-inner">
+            <ul>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Privacidad &amp; cookies</a></li>
+            <li><a href="#">Términos de uso</a></li>
+            <li><a href="#">Aviso legal</a></li>
+            <li><span>&copy; nico-alvarez.eu <span id="current-year"></span></span></li>
+            </ul>
+        </div>
+        </footer>
+
+        <!-- Materialize CSS -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+        <script src="../js/script.js"></script>
+</body>
+</html>
