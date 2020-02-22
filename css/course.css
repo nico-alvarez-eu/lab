@@ -1,0 +1,209 @@
+.title {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.lesson-text {
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 70%;
+  text-align: left;
+  margin: 5px auto 0;
+}
+
+.questions-container {
+    margin: 20px auto;
+}
+
+.question-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: 1px solid #eee;
+    padding: 20px 10px;
+}
+
+.question-container:nth-child(2) {
+    margin-top: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.question-container:last-child {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.answer {
+    margin-left: 20px;
+}
+
+/* Hide the browser's default radio button */
+.question-container input {
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Custom radio button */
+.checkmark {
+    position: relative;
+    min-height: 25px;
+    min-width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.question-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.question-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* The white dot in the middle when checked */
+.question-container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.submit-btn-container {
+    background:#ccc;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 100%;
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+.lesson-text-container p,
+.lesson-text-container img {
+  margin-bottom: 20px;
+}
+
+.normal-link:hover {
+  text-decoration: underline;
+  color: #777;
+}
+
+.lesson-navigation {
+  display: flex;
+  width: 100%;
+  height: 120px;
+}
+
+.lesson-navigation div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #888;
+  width: 100%;
+  height: 100%;
+}
+
+.lesson-navigation div.disabled {
+  visibility: hidden;
+}
+
+.lesson-navigation div.lesson-index {
+  background: #eee;
+}
+
+.lesson-navigation-icon {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.lesson-index .lesson-navigation-icon {
+  color: #000;
+}
+
+/* Other styles */
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.grey-color {
+    color: #999;
+}
+
+.centered-div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Depending on character, one color or another */
+.question-container.slothy input:checked ~ .checkmark {
+    background-color: rgb(50, 172, 2);
+}
+
+.question-container.ardilla input:checked ~ .checkmark {
+    background-color: rgb(114, 51, 20);
+}
+
+.submit-btn-container.slothy:hover,
+.submit-btn-container.slothy:hover .submit-btn {
+    background:rgb(50, 172, 2); 
+    color: #fff;
+}
+
+.submit-btn-container.ardilla:hover,
+.submit-btn-container.ardilla:hover .submit-btn {
+    background:rgb(114, 51, 20); 
+    color: #fff;
+}
+
+.lesson-navigation-icon.slothy:hover {
+  color: rgb(50, 172, 2);
+}
+
+.lesson-navigation-icon.ardilla:hover {
+  color: rgb(114, 51, 20);
+}
+
+.slothy-color {
+    color: rgb(50, 172, 2);
+}
+
+.ardilla-color {
+    color: rgb(114, 51, 20);
+}
+
+/* Media queries */
+@media(max-width: 500px) {
+    .lesson-text {
+        width: 100%;
+      }
+}
+
+@media(max-width: 400px) {
+    .lesson-text {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+}
+

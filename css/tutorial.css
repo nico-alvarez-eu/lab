@@ -1,0 +1,149 @@
+.title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.course-hash-container {
+    justify-content: center;
+}
+
+ol.lesson-wrapper {
+    width: 100%;
+    margin: 30px auto;
+    list-style-type: none;
+    padding: 0;
+    background: #fff;
+    border-radius: .25rem;
+    box-shadow: 0.0625rem 0.0625rem 0.125rem #e0e0e0;
+    border-left: .375rem solid rgb(50, 172, 2);
+}
+
+li.lesson {
+    display: flex;
+    border-bottom: .0625rem solid #e0e0e0;
+}
+
+li.lesson:first-child {
+    border-top-right-radius: .25rem;
+    border-top: .0625rem solid rgb(50, 172, 2);
+}
+
+li.lesson > div {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.lesson-rect-1 {
+    display: flex;
+}
+
+.lesson-number {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 3rem;
+    letter-spacing: .15rem;
+    color: #525252;
+    width: 8rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
+}
+
+.lesson-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1.5625rem;
+    padding: 2rem 0;
+}
+
+.lesson-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.lesson-title p {
+    color: rgb(50, 172, 2);
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-weight: 700;
+    justify-content: start;
+    text-align: left;
+    white-space: pre-wrap;
+    cursor: default;
+}
+
+.lesson-desc {
+    font-size: 1.1rem;
+}
+
+.lesson-rect-2 {
+    display: flex;
+    align-items: center;
+    padding-right: 3.125rem;
+}
+
+.start-btn {
+    color: rgb(50, 172, 2);
+    background-color: #fff;
+    border: 1px solid rgb(50, 172, 2);
+    border-radius: 99px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    justify-content: center;
+    font-weight: 700;
+    border-radius: 2px;
+    padding: .375rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    min-width: 8rem;
+}
+
+@media(max-width: 500px) {
+    .title {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    ol.lesson-wrapper {
+        border: none;
+    }
+
+    li.lesson > div {
+        flex-direction: column;
+        border-bottom: .2rem solid #e0e0e0;
+    }
+
+    li.lesson:first-child {
+        border-top-right-radius: 0;
+        border-top: 1rem solid rgb(50, 172, 2);
+    }
+
+    .lesson-rect-1 {
+        flex-direction: column;
+    }
+
+    .lesson-number {
+        margin: 0 auto;
+        padding: 10px 0 0;
+    }
+
+    .lesson-text {
+        padding: 0 1.5rem 1.5rem;
+        margin: 0 auto;
+    }
+
+    .lesson-rect-2 {
+        justify-content: center;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+}

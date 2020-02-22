@@ -1,0 +1,28 @@
+/* Backgrounds */
+#web-img-bg {
+    background: url(../assets/images/web-min.jpg) center center / cover no-repeat;
+}
+
+#html-img-bg {
+    background: url(../assets/images/html-min.jpg) center center / cover no-repeat;
+}
+
+#css-img-bg {
+    background: url(../assets/images/css-min.jpg) center center / cover no-repeat;
+}
+
+#js-img-bg {
+    background: url(../assets/images/js-min.jpg) center center / cover no-repeat;
+}
+
+#think-img-bg {
+    background: url(../assets/images/think-min.jpg) center center / cover no-repeat;
+}
+
+#python-img-bg {
+    background: url(../assets/images/python-min.jpg) center center / cover no-repeat;
+}
+
+#androidjava-img-bg {
+    background: url(../assets/images/android-java-min.jpg) center center / cover no-repeat;
+}

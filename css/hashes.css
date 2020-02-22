@@ -1,0 +1,35 @@
+/* Course hashes */
+.course-hash-container {
+    display: flex;
+}
+
+.course-hash {
+    padding: 0 5px 0;
+    border-radius: 15px;
+    margin: 0 2px;
+}
+
+.course-hash.web {
+    background: rgb(240, 29, 177);
+    color: #fff;
+}
+
+.course-hash.frontend {
+    background: rgb(13, 0, 128);
+    color: #fff;
+}
+
+.course-hash.programming {
+    background: rgb(172, 172, 172);
+    color: #000;
+}
+
+.course-hash.android {
+    background: rgb(50, 172, 2);
+    color: #fff;
+}
+
+.course-hash.java {
+    background: rgb(255, 116, 36);
+    color: #fff;
+}

@@ -1,0 +1,106 @@
+.title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-card {
+    width: 310px;
+    min-width: 310px;
+    cursor: pointer;
+    display: flex;
+    box-shadow: rgb(229, 229, 229) 0px 4px 0.9em;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-bottom: 15px;
+    flex-direction: column;
+    margin: 24px auto;
+    border-radius: 16px;
+    transition: all 0.2s ease 0s;
+    background: rgb(255, 255, 255);
+}
+
+.course-card-inner {
+    -webkit-box-align: center;
+    align-items: center;
+    min-width: 150px;
+    display: inline-block;
+    height: 140px;
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    text-align: right;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0px 0px 10px;
+}
+
+
+.course-title {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 900;
+    overflow-wrap: break-word;
+    width: 70%;
+    margin: 10px 0px 0px;
+}
+
+.course-lesson-desc {
+    display: flex;
+    font-size: 0.8rem;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(85, 83, 255);
+    margin-top: 15px;
+    align-self: center;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.course-btn {
+    color: rgb(85, 83, 255);
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+    width: 195px;
+    border-radius: 99px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(85, 83, 255);
+    border-image: initial;
+    padding: 12px 33px 10px;
+    margin: 15px 0px;
+}
+
+/* Media queries */
+@media(max-width: 1024px) {
+    .course-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+}
+
+@media(max-width: 500px) {
+    .course-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .title {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

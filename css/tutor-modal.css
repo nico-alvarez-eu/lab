@@ -1,0 +1,134 @@
+/* Tutor Intro Modal Styles */
+.intro-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.intro-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.intro-modal-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.intro-modal-close:hover,
+.intro-modal-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.intro-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 16px;
+    color: white;
+}
+
+.intro-modal-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 16px 25px;
+}
+
+.img-wrapper {
+    width: 1000px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.intro-modal-body p {
+    font-size: 1rem;
+    padding: 0 20px 0 30px;
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+
+
+/* Slothy */
+.imh-slothy {
+    background-color: rgb(50, 172, 2);
+}
+
+.imb-slothy-p {
+    border-color:  rgb(50, 172, 2);
+}
+
+/* Ardilla */
+.imh-ardilla {
+    background-color: rgb(114, 51, 0);
+}
+
+
+/* Media queries */
+@media(max-width: 768px) {
+    .intro-modal-body {
+        flex-direction: column;
+    }
+
+    .img-wrapper {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .intro-modal-body p {
+        border: none;
+        padding: 30px 20px;
+    }
+}
+
+@media(max-width: 500px) {
+    .intro-modal-content {
+        width: 100%;
+    }
+
+    .intro-modal-body {
+        margin-top: 20px;
+    }
+
+    .img-wrapper {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .intro-modal-body p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+

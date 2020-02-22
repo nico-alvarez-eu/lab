@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico Alvarez | Kurse</title>
+    <!-- Materialize CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tutorials.css">
+    <link rel="stylesheet" href="../css/thumbnails.css">
+    <link rel="stylesheet" href="../css/hashes.css">
+    <link rel="shortcut icon" href="../logo.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+  <div class="container">
+    <!-- Cookie banner -->
+    <div class="cookie-banner block" id="cookie-banner">
+      <p class="cookie-text">
+        <i class="fas fa-info-circle info-icon"></i>
+        Diese Webseite verwendet Cookies, um eine bessere Leistung und personalisierte Inhalte anzubieten. Indem du diese Webseite weiter nutzt, stimmst du damit der Benutzung von Cookies zu.
+      </p>
+      <button class="btn cb-close-btn" id="cb-close-btn">OK</button>
+      <a href="#" class="cb-info">Mehr Infos</a>
+    </div>
+    <!-- Nav -->
+    <nav class="main-nav">
+      <ul class="left-menu">
+        <img src="../assets/images/logo.PNG" alt="Nico Alvarez" class="logo">
+        <a href="#" class="brand-name active">Nico Alvarez</a>
+      </ul>
+      <ul class="main-menu">
+        <li><a href="#">Über mich</a></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Impressum</a></li>
+        <li>
+          <select id="languages" onChange="checkLang(this);">
+            <option value="de">
+              Deutsch
+            </option>
+            <option value="en">
+              English
+            </option>
+            <option value="es">
+              Español
+            </option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+        
+        <h1 class="title">Was willst du heute lernen?</h1>
+
+        <div class="course-grid">
+            <a name="Wie funktioniert das Web?" 
+               class="course-card" 
+               href="#">
+            <div class="course-card-inner" id="web-img-bg"></div>
+                <div class="course-title">Wie funktionieren das Web und das Internet?</div>
+                <span class="course-hash web">#web</span>
+                <div class="course-lesson-desc">
+                    <p>Wusstest du, dass das WWW und das Internet nicht das Gleiche sind? Dieses und vieles mehr wirst du in diesem Kurs lernen können!</p>
+                </div>
+                <button class="course-btn">KURS STARTEN</button>
+            </a>
+            <a name="HTML" 
+               class="course-card" 
+               href="#">
+            <div class="course-card-inner" id="html-img-bg"></div>
+                <div class="course-title">HTML</div>
+                <span class="course-hash web">#web</span>
+                <span class="course-hash frontend">#frontend</span>
+                <div class="course-lesson-desc">
+                    <p>HTML ist die Sprache, die deinen Webseiten eine Struktur gibt. Ohne HTML können Browser die Ausrichtung und Anordnung der Inhalte nicht interpretieren. Sie können selbst nicht zwischen einem Text und einem Bild unterscheiden!</p>
+                    <!-- Build it later: A modal -->
+                    <!-- <a href="#">¿Para quién es este curso?</a> -->
+                </div>
+                <button class="course-btn">KURS STARTEN</button>
+            </a>
+
+            <a name="CSS" 
+               class="course-card" 
+               href="#">
+            <div class="course-card-inner" id="css-img-bg"></div>
+                <div class="course-title">CSS</div>
+                <span class="course-hash web">#web</span>
+                <span class="course-hash frontend">#frontend</span>
+                <div class="course-lesson-desc">
+                    <p>CSS ist die Sprache, die deinem HTML schöner und benutzerfreundlicher gestaltet. Damit kannst du einen langweilig aussehenden Knopf in einen attraktiven Button verwandeln, die jeder anklicken möchte. Mit CSS kannst du auch die Anordnung der Webseite besser steuern und schöner entwerfen</p>
+                </div>
+                <button class="course-btn">KURS STARTEN</button>
+            </a>
+
+            <a name="JavaScript" 
+               class="course-card" 
+               href="#">
+            <div class="course-card-inner" id="js-img-bg"></div>
+                <div class="course-title">JavaScript</div>
+                <span class="course-hash web">#web</span>
+                <span class="course-hash frontend">#frontend</span>
+                <div class="course-lesson-desc">
+                    <p>JavaScript is the programming language of the web. What you can do with a normal programming language, you can do it with JavaScript. Not only that, but with JavaScript you can also manipulate HTML and CSS. Like that, your websites stop being static and begin being dynamic</p>
+                </div>
+                <button class="course-btn">KURS STARTEN</button>
+            </a>
+
+            <a name="Pensar como un programador" 
+               class="course-card" 
+               href="#">
+            <div class="course-card-inner" id="think-img-bg"></div>
+                <div class="course-title">Denke wie ein Programmierer</div>
+                <span class="course-hash programming">#programmieren</span>
+                <div class="course-lesson-desc">
+                    <p>Programmieren heißt nicht einfach die Syntax einer Programmiersprache auswendig zu lernen, oder unüberlegten Code auf den Bildschirm auszuspucken. In diesem Kurs wirst du erfahren, wie das Programmieren eine Art Denken für sich ist</p>
+                </div>
+                <button class="course-btn">KURS STARTEN</button>
+            </a>
+
+            <a name="Python" 
+               class="course-card" 
+               href="#">
+            <div class="course-card-inner" id="python-img-bg"></div>
+                <div class="course-title">Python</div>
+                <span class="course-hash programming">#programmieren</span>
+                <div class="course-lesson-desc">
+                    <p>Python ist eine Programmiersprache, die nicht nur für diejenigen praktisch ist, die ein bisschen in die Programmierwelt eintauchen wollen ohne viele Einzelheiten vorab lernen zu müssen. Es ist zudem ein perfektes Werkzeug, um in die Bereiche der Datenanalyse, Data Science, IoT oder sogar dem Web reinzuschnuppern</p>
+                </div>
+                <button class="course-btn">KURS STARTEN</button>
+            </a>
+
+            <a name="Android (con Java)" 
+               class="course-card" 
+               href="#">
+            <div class="course-card-inner" id="androidjava-img-bg"></div>
+                <div class="course-title">Android (with Java)</div>
+                <span class="course-hash android">#android</span>
+                <span class="course-hash java">#java</span>
+                <div class="course-lesson-desc">
+                    <p>Android ist ein Betriebssystem, das nicht nur in Smartphones, sondern auch in Smartwatches, Tablets, Fernsehern und sogar in Autos Verwendung findet. In diesem Android-Kurs wirst du lernen wie Android funktioniert und mit deinen ersten einfachen Apps Erfahrung sammeln und in Java entwickeln</p>
+                </div>
+                <button class="course-btn">KURS STARTEN</button>
+            </a>
+        </div>
+
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+        <div class="footer-inner">
+            <ul>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy &amp; cookies</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Imprint &amp; Legal</a></li>
+            <li><span>&copy; nico-alvarez.eu <span id="current-year"></span></span></li>
+            </ul>
+        </div>
+        </footer>
+
+        <!-- Materialize CSS -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+        <script src="../js/script.js"></script>
+</body>
+</html>
